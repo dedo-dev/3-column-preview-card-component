@@ -1,0 +1,44 @@
+/* ---------- CSS RESET ---------- */
+
+/* Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove Default margin  */
+body, h1, h2 {
+  margin: 0;
+}
+
+/* Body Default */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* line-height on Heading & Interactive Elements */
+h1, h2, button {
+  line-height: 1.1;
+}
+
+/* Balance text-wrap on Headings */
+h1, h2 {
+  text-wrap: balance;
+}
+
+/* Make img easier to work with */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit font for button Element */
+button {
+  font: inherit;
+}
+
+/* CSS VARIABLE */
+
+:root {
+  
+}
