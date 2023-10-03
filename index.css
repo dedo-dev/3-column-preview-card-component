@@ -37,8 +37,88 @@ button {
   font: inherit;
 }
 
-/* CSS VARIABLE */
+/* ---------- CSS VARIABLE ---------- */
 
 :root {
   
+  /* Primary Color  */
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral Color */
+  --clr-white: hsla(0, 0%, 100%, 0.75);  /*txt*/
+  --clr-very-light-gray: hsl(0, 0%, 95%); /*bg_h_btn*/
+
+  /* Typography */
+  --ff-lexend:  'Lexend Deca', sans-serif;
+  --ff-b-s-display: 'Big Shoulders Display', cursive;
+  --fs-text: .9375rem;
+  --fs-heading: 1.8rem;
+  --fw-400: 400;
+  --fw-700: 700;
+  
+}
+
+/* ---------- CHALLENGE STYLING ---------- */
+
+body {
+  font-family: var(--ff-lexend);
+  font-size: var(--fs-text);
+  font-weight: var(--fw-400);
+  background: var(--clr-very-light-gray);
+  color: var(--clr-white);
+}
+
+.btn {
+  cursor: pointer;
+  background: var(--clr-very-light-gray);
+  padding: .7em 2em;
+  border: 2px solid var(--clr-very-light-gray);
+  border-radius: 10rem;
+}
+
+.btn:focus,
+.btn:hover {
+  background: transparent;
+  border: 2px solid var(--clr-very-light-gray);
+}
+
+.icon {
+  width: 3rem;
+}
+
+.component-wrapper {
+  width: 90%;
+  max-width: 23.4375rem;
+  margin: 3rem auto;
+}
+
+.component {
+  padding: 3em;
+}
+
+.component__title {
+  font-family: var(--ff-b-s-display);
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  color: var(--clr-very-light-gray);
+  margin-block: 1.5rem;
+}
+
+.component--one {
+  background: var(--clr-bright-orange);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.component--two {
+  background: var(--clr-dark-cyan);
+}
+
+.component--three {
+  background: var(--clr-very-dark-cyan);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
