@@ -6,7 +6,7 @@
 }
 
 /* Remove Default margin  */
-body, h1, h2 {
+body, h1, h2, p {
   margin: 0;
 }
 
@@ -72,8 +72,9 @@ body {
 
 .btn {
   cursor: pointer;
+  font-size: 0.75rem;
   background: var(--clr-very-light-gray);
-  padding: .7em 2em;
+  padding: .6em 1.9em;
   border: 2px solid var(--clr-very-light-gray);
   border-radius: 10rem;
 }
@@ -81,7 +82,20 @@ body {
 .btn:focus,
 .btn:hover {
   background: transparent;
+  color: var(--clr-white);
   border: 2px solid var(--clr-very-light-gray);
+}
+
+.btn--orange {
+  color: var(--clr-bright-orange);
+}
+
+.btn--cyan {
+  color: var(--clr-dark-cyan);
+}
+
+.btn--dark-cyan {
+  color: var(--clr-very-dark-cyan);
 }
 
 .icon {
@@ -90,7 +104,7 @@ body {
 
 .component-wrapper {
   width: 90%;
-  max-width: 23.4375rem;
+  max-width: 22rem;
   margin: 3rem auto;
 }
 
@@ -104,7 +118,12 @@ body {
   font-weight: var(--fw-700);
   text-transform: uppercase;
   color: var(--clr-very-light-gray);
-  margin-block: 1.5rem;
+  margin-block: 1.8rem;
+}
+
+.component__txt {
+  width: 90%;
+  margin-bottom: 1.3rem;
 }
 
 .component--one {
@@ -121,4 +140,39 @@ body {
   background: var(--clr-very-dark-cyan);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+@media (min-width: 56rem) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .component-wrapper {
+    width: 100%;
+    max-width: 53rem;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .component {
+    padding: 2em;
+  }
+
+  .component__title {
+    margin-block: 1.6rem;
+  }
+
+  .component__txt {
+    width: 95%;
+    margin-bottom: 4rem;
+  }
+
+  /* .component--one {
+    border-top-left-radi;
+  } */
 }
