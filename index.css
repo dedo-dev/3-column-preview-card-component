@@ -105,7 +105,7 @@ body {
 .component-wrapper {
   width: 90%;
   max-width: 22rem;
-  margin: 3rem auto;
+  margin: 1rem auto;
 }
 
 .component {
@@ -128,8 +128,7 @@ body {
 
 .component--one {
   background: var(--clr-bright-orange);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
 
 .component--two {
@@ -138,8 +137,7 @@ body {
 
 .component--three {
   background: var(--clr-very-dark-cyan);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-radius: 0 0 8px 8px;
 }
 
 @media (min-width: 56rem) {
@@ -172,7 +170,11 @@ body {
     margin-bottom: 4rem;
   }
 
-  /* .component--one {
-    border-top-left-radi;
-  } */
+  .component--one {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .component--three {
+    border-radius: 0 8px 8px 0;
+  }
 }
