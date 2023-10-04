@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/preview-cards-mobile-first-approach-built-with-css-grid-wL8M7O_Dcs
 - Live Site URL: https://dedo-dev.github.io/3-column-preview-card-component/
 
 ## My process
