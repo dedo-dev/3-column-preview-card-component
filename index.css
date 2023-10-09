@@ -17,7 +17,7 @@ body {
 }
 
 /* line-height on Heading & Interactive Elements */
-h1, h2, button {
+h1, h2 {
   line-height: 1.1;
 }
 
@@ -71,6 +71,8 @@ body {
 }
 
 .btn {
+  display: inline-flex;
+  text-decoration: none;
   cursor: pointer;
   font-size: 0.75rem;
   background: var(--clr-very-light-gray);
